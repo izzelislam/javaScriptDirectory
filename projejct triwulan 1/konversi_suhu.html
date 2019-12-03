@@ -1,0 +1,39 @@
+<h1>KONVERSI SUHU CELCIUS</h1>
+
+<input type="number" id="suhu"><br><br>
+<input type="submit" onclick="suhu()">
+<br><br><br><br>
+
+kelvin :<span id="kelfin"></span><br>
+farenheit :<span id="farenheit"></span><br>
+rankine :<span id="rankine"></span><br>
+newton :<span id="newton"></span><br>
+reamur :<span id="reamur"></span><br>
+romer :<span id="romer"></span><br>
+
+
+<script>
+	
+	function suhu() {
+		var cel=document.getElementById('suhu').value;
+		
+		var kelvin=parseInt(cel)+273;
+		document.getElementById('kelfin').innerHTML=kelvin;
+
+		var farenheit=(9/2)*parseInt(cel)+32;
+		document.getElementById('farenheit').innerHTML=farenheit;
+
+		var reamur=(4/5)*parseInt(cel);
+		document.getElementById('reamur').innerHTML=Math.round(reamur);
+
+		var newton=parseInt(cel)*33/100;
+		document.getElementById('newton').innerHTML=newton;
+
+		var rankine=1.8*(parseInt(cel)+491.67);
+		document.getElementById('rankine').innerHTML=Math.round(rankine);
+
+		var romer=parseInt(cel)*21/40+7.5;
+		document.getElementById('romer').innerHTML=romer;
+	}
+
+</script>

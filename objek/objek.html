@@ -1,0 +1,25 @@
+<script>
+//konsep this
+var a=10;
+console.log(this.a);
+
+//iteral
+var obj={a:20,b:30};
+
+
+obj.halo=function halo (){
+	console.log(this);
+	console.log('halo');
+}
+obj.halo();
+
+//contrusktor
+function Honda(){
+	console.log(this);
+	console.log('halo');
+
+}
+
+console.log(new Honda);
+
+</script>

@@ -1,0 +1,14 @@
+<script>
+	var anggaka=[23,45,12,34,67];
+	
+	anggaka.forEach(function(value, index, arr) {
+		document.write(index+" : "+value+" "+arr+"<br>");
+	});
+	
+	var conmap=anggaka.map(function(val){
+		return val+10;
+	});
+	
+	document.write(conmap);
+	
+</script>

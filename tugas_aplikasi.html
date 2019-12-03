@@ -1,0 +1,101 @@
+<br>
+<hr>
+<h3>~ Rumus Menghitung Luas Lingkaran ~</h3>
+<hr>
+
+<label> jari-jari :</label>
+<input type="number" id="jari">
+<br>
+<br>
+<button onclick="jumlah()">Jumlahkan</button>
+Luas-Lingkaran : <span id="hasil"></span>
+
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+<h3>~ Rumus Menghitung Luas Layang-Layang ~</h3>
+<hr>
+<label>Diagonal 1</label>
+<input type="number" id="d1">
+<br>
+<br>
+<label>Diagonal 2</label>
+<input type="number" id="d2">
+<br>
+<br>
+<button onclick="jumlah1()">Jumlahkan</button>
+Luas layang-Layang :<span id="hasil1"></span>
+
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h3>Luas Segitiga Sama Kaki</h3>
+<hr>
+<label>Alas       :</label>
+<input type="number" id="alas">
+<br>
+<br>
+<label>Tinggi :</label>
+<input type="number" id="tinggi">
+<br>
+<br>
+<button onclick="jumlah2()">Jumlahkan</button>
+
+Hasil Luas Sitiga Sama Kaki <span id="hasil2"></span>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<script>
+	function jumlah(){
+	var setengah=1/2;
+	var pi      =3.14;
+	var jari=document.getElementById('jari').value;
+	var hasil=setengah*(pi*jari*jari);
+	document.getElementById('hasil').innerHTML=hasil;
+}
+
+	function jumlah1(){
+	var setengah=1/2;
+	var d1     =document.getElementById('d1').value;
+	var d2     =document.getElementById('d2').value;
+	var hasil1  =setengah*d1*d2;
+	document.getElementById('hasil1').innerHTML=hasil1;
+}
+
+	function jumlah2(){
+	var setengah=1/2;
+	var alas=document.getElementById('alas').value;
+	var tiggi=document.getElementById('tinggi').value;
+	var hasil2=setengah*(alas*tiggi);
+	 document.getElementById('hasil2').innerHTML=hasil2;
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

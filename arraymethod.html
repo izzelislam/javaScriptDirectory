@@ -1,0 +1,86 @@
+<head>
+	<style>
+		.but{
+			width:25%;
+			height:30px;
+			margin:250px auto;
+			border-radius:5px;background-color:dodgerblue;
+		}
+		
+		.but1{
+			width:100%;
+			height:30px;
+			color:white;
+			border-radius:5px;background-color:dodgerblue;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="but">
+		<button class="but1" onclick="wet()">klick me...!!</button>
+	</div>
+	<script>
+	function wet(){
+		var food=["nasi","sayur","setop","nutrijel"];
+		var convertstr=food.toString();
+			document.write("1 .toString()  :"+convertstr+"<br>");
+			
+		var jooin=food.join();
+			document.write("2 .join()  :"+jooin+"<br>");
+		var popi=food.pop();
+			document.write("3 .pop()  :"+popi+"<br>");
+			document.write(food+"<br>");
+			
+		var pus=food.push("beras");
+			document.write("4 .push()  :"+pus+"<br>");
+			document.write(food+"<br>");
+			
+		var sif=food.shift();
+			document.write("5 .shift()  :"+sif+"<br>");
+			document.write(food+"<br>");
+			
+		var usif=food.unshift("kelapa");
+			document.write("6 .unshift()  :"+usif+"<br>");
+			document.write(food+"<br>");
+			
+		var leng=[food.legth]="kelapa";
+			document.write("7 .legth()  :"+leng+"<br>");
+			document.write(food+"<br>");
+			
+		var hps=delete food[3];
+			document.write("8. delete  :"+food+"<br>");
+			document.write("8. delete  :"+food[3]+"<br>");
+			
+		var spl=food.splice(3,0,"baso","mie_ayam");
+			document.write("9. splice()  :"+spl+"<br>");
+			document.write(food+"<br>");
+			
+		var rem=food.splice(2,1);
+			document.write("10 :"+food+"<br>");
+			
+		var sor=food.sort();
+			document.write("11 sort() :"+sor+"<br>");
+			
+		var rev=food.reverse();
+			document.write("12 reverse() :"+rev+"<br>");
+			
+		var num= [40, 12, 800,3,2,5,10,200];
+			document.write("<br><br><br>"+num+"<br>")	
+			
+		var sn=num.sort(function (a,b){return a-b});
+			document.write("13 sort number acending :"+sn+"<br>");
+			
+		var sm=num.sort(function (a,b){return b-a});
+			document.write("14 sort number decending :"+sm+"<br>");
+			
+		document.write("<h1>compare function</h1><br>")
+		
+		var gab=food.concat(num);
+			document.write("15 concat() :"+gab+"<br>");
+			
+					
+		}			
+			
+	</script>
+</body>

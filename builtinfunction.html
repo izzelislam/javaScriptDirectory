@@ -1,0 +1,29 @@
+<body>
+	<script>
+		/*function luas_segitiga(alas,tinggi,satuan){
+		
+			var rumus=alas * tinggi / 2;
+			
+			return rumus + satuan;
+		}	
+		
+		document.write(luas_segitiga(2,2,"wakwakkkkkkwa"));*/
+		
+			//menmeberikan nilai default
+			//pengisian nilai defaul harus di isi dari variabel yang paling belakang kemudian tengah dan seterusnya
+		
+			function luas_segitiga(alas,tinggi=20 ,satuan=".cm"){
+		
+			var rumus=alas * tinggi / 2;
+			
+			return rumus + satuan;
+		}	
+		
+		document.write(luas_segitiga(2,2));
+		document.write("<br>");
+		document.write(luas_segitiga(2,));
+
+	</script>
+</body>
+
+

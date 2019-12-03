@@ -1,0 +1,72 @@
+<script>
+	var no=[100,20,90,65,47,77,30,10,8,15,19];
+			no.forEach(function (a,b){
+			document.write("index ke "+b+" adalah :"+a+"<br>");
+		});
+		
+		
+	document.write("<br>map() :<br> ");
+	
+	
+	var ex=no.map(function (a){
+			return a-13;
+		});
+		
+		document.write(ex);
+		
+	document.write("<br>filter() :<br> ");
+	
+	var jum=no.filter(function(a){
+		return a>40;
+	})
+		document.write(jum);
+		
+	document.write("<br>reduce() ;<br> ");
+	
+	var red=no.reduce(function(a,b){
+	 return a+b;
+	})
+		document.write(red);
+		
+	document.write("<br>every() :<br>");
+	var tes=no.every(function(a){
+	 return a>0;
+	})
+		document.write(tes);
+		
+	document.write("<br>some() :<br>");
+	var sm=no.some(function(a){
+	 return a<0;
+	})
+		document.write(sm);		
+		
+	document.write("<br>indexOf() :<br>");
+	var idx=no.indexOf(20)
+	document.write(idx);
+	
+	document.write("<br>lastIndexOf() :<br>");
+	var ls=no.lastIndexOf(90);
+	document.write(ls);		
+	
+	document.write("<br>find() :<br>");
+	var lso=no.find(function (a){
+	return a<29;
+	});
+	document.write(lso);
+	
+	document.write("<br>findIndex() :<br>");
+	var lsoo=no.findIndex(function (a){
+	return a>30;
+	});
+	document.write(lsoo);	
+</script>
+
+
+
+
+
+
+
+
+
+

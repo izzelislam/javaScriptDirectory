@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Belajar Fungsion</title>
+</head>
+<body>
+	<input id="anggka1" type="number">
+	+
+	<input id="anggka2" type="number">
+	=
+	<span id="hasil"></span>
+	<br>
+	<button onclick="jumlah()">jumlahkan</button>
+
+
+<script>
+
+function jumlah(){
+	var anggka1 = document.getElementById('anggka1').value;
+	var anggka2 = document.getElementById('anggka2').value;
+
+	var result = parseInt (anggka1)+ parseInt (anggka2);
+
+	document.getElementById('hasil').innerHTML=result;
+}
+
+
+
+</script>
+
+</body>
+</html>

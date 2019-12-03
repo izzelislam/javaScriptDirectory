@@ -1,0 +1,82 @@
+<div id="kot" onmouseover="ukuran()" onmouseout="bb()">
+	<p>caba kursornya dong</p>
+	<button onclick="tampil()"> STRING METHOD</button>
+	<div>
+	
+<script>
+	function ukuran(){
+		var kotak=document.getElementById('kot');
+		kotak.style.width="20%";
+		kotak.style.margin="100px auto";
+		kotak.style.background="red";
+		kotak.style.color="white";
+		kotak.style.padding="30px";
+		
+		
+	}
+	
+	function bb(){
+		var posisi=document.getElementById('kot');
+		posisi.style.width="20%";
+		posisi.style.margin="100px auto";
+		posisi.style.background="green";
+		posisi.style.color="white";
+		kotak.style.padding="30px";
+	}
+	document.write("<br><br>");
+	function tampil(){
+	var jalan="jl       raya panjang             "
+	var alamat="sleman jogja jawatenggah indonesia, sleman";
+	var panjang=alamat.length;
+		document.write("1.length :"+panjang+"<br>");
+		
+	var index=alamat.indexOf("indonesia");
+		document.write("2.indexOf  :"+index+"<br>");
+		
+	var index=alamat.lastIndexOf("sleman");
+		document.write("3.lastIndexOf  :"+index+"<br>");
+		
+	var uppercase="halo saya uppercase :)";
+	var convertup=uppercase.toUpperCase();
+		document.write("4.toUpperCase()  :"+convertup+"<br>");
+		
+	var cari=alamat.search("jawatenggah");
+		document.write("5.search()  :"+cari+"<br>");
+
+	var potong=alamat.slice(9,27);
+		document.write("6.slice()  :"+potong+"<br>");
+	
+	var iris=alamat.substring(9,27);
+		document.write("7.substring()  :"+iris+"<br>");
+		
+	var sub=alamat.substr(2,12);
+		document.write("8.sub str()  :"+sub+"<br>");
+		
+	var ganti=alamat.replace("jogja","DIY");
+		document.write("9.replace()  :"+ganti+"<br>");
+		
+	var convertlow=uppercase.toLowerCase();
+		document.write("10.toLowerCase()  :"+convertlow+"<br>");
+		
+	var gab=jalan.concat(" ",alamat);
+		document.write("11.concat() :"+gab+"<br>");
+		
+		document.write("11.concat() :"+jalan+" " +alamat+"<br>");
+		
+	var tr=jalan.trim();
+		document.write("12.trim() :"+tr+"<br>");
+		
+	var extrak=convertup.charAt(8);
+		document.write("13.charAt() :"+extrak+"<br>");
+		
+	var extrak=convertup.charCodeAt(8);
+		document.write("14.charCodeAt() :"+extrak+"<br>");
+		
+	var bahan=("mangga,pisang,kelapa,tomat");
+	var hasil=bahan.split(",");
+		document.write("15.split() :"+hasil+"<br>");
+		}
+	
+</script>
+
+
